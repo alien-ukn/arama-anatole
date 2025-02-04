@@ -16,7 +16,7 @@ categories = [
 
 series = ["report"]
 
-aliases = ["240825-IronStar"]
+#aliases = ["240825-IronStar"]
 
 +++
 
