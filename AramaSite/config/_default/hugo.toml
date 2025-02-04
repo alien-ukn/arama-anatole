@@ -1,7 +1,7 @@
 baseURL = "https://example.com"
-languageCode = "en"
-DefaultContentLanguage = "en"
-title = "Website of Jane Doe"
+languageCode = "ru"
+DefaultContentLanguage = "ru"
+title = "Arana Anna триатлет, тренер"
 
 # theme as hugo module
 #theme = "github.com/lxndrblz/anatole"
@@ -20,7 +20,7 @@ pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
 
 # Localized dates requires Hugo version 0.87.0
-localizedDates = false
+localizedDates = true
 
 [markup]
     [markup.goldmark]
