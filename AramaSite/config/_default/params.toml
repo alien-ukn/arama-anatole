@@ -1,8 +1,8 @@
 
-title = "Arama Anna"
+title = "Арама Анна"
 author = "Arama Anna"
 #copyright = "2020-2021"
-description = "Arama Anna thriathlete"
+description = "Arama Anna 🏊‍♀️"
 profilePicture = "images/profile.jpg"
 keywords = ""
 favicon = "favicons/"
@@ -62,19 +62,19 @@ title = "Linkedin"
 url = "https://de.linkedin.com/"
 
 [[socialIcons]]
-icon = "fa-brands fa-github"
-title = "GitHub"
-url = "https://github.com/lxndrblz/anatole/"
+icon = "fa-brands fa-telegram"
+title = "Telegram"
+url = "https://t.me/anna_arama"
 
 [[socialIcons]]
 icon = "fa-brands fa-instagram"
 title = "instagram"
-url = "https://www.instagram.com/"
+url = "https://www.instagram.com/anna_arama"
 
 [[socialIcons]]
 icon = "fa-solid fa-envelope"
 title = "e-mail"
-url = "mailto:mail@example.com"
+url = "mailto:anna@arama.team"
 
 [mermaid]
 # enable = true
