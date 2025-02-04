@@ -1,5 +1,5 @@
 +++
-author = "AramaS Anna"
+author = "Arama Anna"
 +++
 
 <!--

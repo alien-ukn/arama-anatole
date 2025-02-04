@@ -1,5 +1,5 @@
 +++
-author = "AramaS Anna"
+author = "Arama Anna"
 title = "Placeholder Text"
 date = "2019-03-09"
 description = "Lorem Ipsum Dolor Si Amet"

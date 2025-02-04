@@ -3,7 +3,7 @@ title = "Certifications"
 description = "Hugo Certifications"
 date = "2022-04-10"
 aliases = ["certifications"]
-author = "AramaS Anna"
+author = "Arama Anna"
 +++
 
 ## 3 Best Hugo Courses, Training, Classes & Tutorials Online
