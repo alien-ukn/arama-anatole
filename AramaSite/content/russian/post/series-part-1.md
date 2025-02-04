@@ -1,5 +1,5 @@
 ---
-author: Hugo Authors
+author: AramaS Anna
 title: Series Part 1
 date: 2021-08-14
 description: A brief guide to how to setup series part 1
@@ -29,7 +29,7 @@ This end results should be a Front Matter that looks similar to this:
 
 ```md
 ---
-author: Hugo Authors
+author: AramaS Anna
 title: Series Part 1
 date: 2021-08-14
 description: A brief guide to how to setup series part 1

@@ -1,5 +1,5 @@
 +++
-author = "Hugo Authors"
+author = "AramaS Anna"
 title = "Guide to Thumbnails in Hugo"
 date = "2019-03-04"
 description = "Guide to Thumbnails in Hugo"
@@ -17,7 +17,7 @@ If put together, it will look like this (that's in fact this post's frontmatter)
 
 ```md
 +++
-author = "Hugo Authors"
+author = "AramaS Anna"
 title = "Guide to Thumbnails in Hugo"
 date = "2019-03-04"
 description = "Guide to Thumbnails in Hugo"

@@ -1,5 +1,5 @@
 +++
-author = "Hugo Authors"
+author = "AramaS Anna"
 title = "Redirect"
 date = "2021-06-20"
 description = "Usage of redirectUrl"

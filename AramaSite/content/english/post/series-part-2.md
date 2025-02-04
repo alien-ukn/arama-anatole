@@ -1,5 +1,5 @@
 ---
-author: Hugo Authors
+author: AramaS Anna
 title: Series Part 2
 date: 2021-08-15
 description: A brief guide to how to setup series part 2
