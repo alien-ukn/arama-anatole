@@ -36,7 +36,7 @@ Anatole's aims to be minimalistic and sleek but still brings some great function
 
 ```shell
 git clone https://github.com/lxndrblz/anatole.git anatole
-cd anatole/exampleSite
+cd anatole/AramaSite
 hugo server --themesDir ../..
 ```
 
@@ -65,8 +65,8 @@ If you like this theme, give it a star on GitHub, and consider supporting its de
 ## Special Thanks 🎁
 
 - Go to [Cai Cai](https://github.com/hi-caicai), for the great Anatole [Farbox theme](https://github.com/hi-caicai/farbox-theme-Anatole) that formed the foundation for this theme.
-- Go to [Kareya Saleh](https://unsplash.com/photos/tLKOj6cNwe0) for providing the [profile picture](https://github.com/lxndrblz/anatole/blob/master/exampleSite/static/images/profile.jpg) used in the exampleSite.
-- Go to [Petri R](https://unsplash.com/photos/jLn20MzqfdE) for providing the [portfolio picture](https://github.com/lxndrblz/anatole/blob/master/exampleSite/static/images/portfolio/code.jpg) used in the exampleSite.
-- Go to [Ales Krivec](https://unsplash.com/photos/4miBe6zg5r0) for providing the thumbnail picture used in the exampleSite [image-test post](https://github.com/lxndrblz/anatole/blob/master/exampleSite/content/english/post/image-test.md).
-- Go to [Tobias Ahlin](https://github.com/tobiasahlin) for his [SpinKit](https://github.com/tobiasahlin/SpinKit) that is used in the exampleSite [redirect post](https://github.com/lxndrblz/anatole/blob/master/exampleSite/content/english/post/redirect.md).
+- Go to [Kareya Saleh](https://unsplash.com/photos/tLKOj6cNwe0) for providing the [profile picture](https://github.com/lxndrblz/anatole/blob/master/AramaSite/static/images/profile.jpg) used in the AramaSite.
+- Go to [Petri R](https://unsplash.com/photos/jLn20MzqfdE) for providing the [portfolio picture](https://github.com/lxndrblz/anatole/blob/master/AramaSite/static/images/portfolio/code.jpg) used in the AramaSite.
+- Go to [Ales Krivec](https://unsplash.com/photos/4miBe6zg5r0) for providing the thumbnail picture used in the AramaSite [image-test post](https://github.com/lxndrblz/anatole/blob/master/AramaSite/content/english/post/image-test.md).
+- Go to [Tobias Ahlin](https://github.com/tobiasahlin) for his [SpinKit](https://github.com/tobiasahlin/SpinKit) that is used in the AramaSite [redirect post](https://github.com/lxndrblz/anatole/blob/master/AramaSite/content/english/post/redirect.md).
 - Go to [FontAwseome](https://fontawesome.com/) for providing the icons used in this project.
