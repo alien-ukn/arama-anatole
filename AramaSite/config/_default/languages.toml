@@ -9,4 +9,6 @@ title = "Блог"
 weight = 12
 LanguageName = "RU"
 contentDir = "content/russian"
-
+contentDir = "content/russian"
+dateFormat = "02.01.2006"  # Формат даты: день.месяц.год
+timeFormat = "15:04"       # Формат времени: часы:минуты
