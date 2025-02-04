@@ -8,7 +8,7 @@ Anatole is a beautiful minimalist two-column [hugo](https://gohugo.io/) theme ba
 ## Demo
 
 A live demo of the theme can be found under the following domain:
-[https://anatole-demo.netlify.app/](https://anatole-demo.netlify.app/)
+[https://arama-a.netlify.app/](https://arama-a.netlify.app/)
 
 ## Features
 
