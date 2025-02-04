@@ -5,22 +5,19 @@ date = "2024-08-25"
 description = "IronStar Крылатское Half 2024 гонка"
 tags = [
     "half",
-    "triathlon",
-    "race",
     "ironstar"
 ]
 categories = [
     "triathlon",
     "race",
 ]
-
 series = ["report"]
 
 #aliases = ["240825-IronStar"]
 
 +++
 
-IronStar Крылатское Half 2024.
+отчет IronStar Крылатское Half 2024.
 4:48:01
 
 <!--more-->
