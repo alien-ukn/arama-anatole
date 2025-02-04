@@ -5,7 +5,7 @@
   url = "/"
 
   [[main]]
-  name = "Posts"
+  name = "Блог"
   weight = 200
   identifier = "posts"
   url = "/post/"
@@ -17,7 +17,7 @@
 #  url = "/portfolio/"
 
   [[main]]
-  name = "About"
+  name = "Обо мне"
   weight = 400
   identifier = "about"
   url = "/about/"
