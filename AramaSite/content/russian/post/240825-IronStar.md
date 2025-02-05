@@ -23,12 +23,8 @@ series = ["race"]
 <!--more-->
 
 ## О гонке
-{{< figure src="https://iron-star.com/favicon/safari-pinned-tab.svg" alt="IronStar" caption="big" class="big" >}}
-{{< figure src="https://iron-star.com/favicon/safari-pinned-tab.svg" alt="IronStar" caption="medium" class="medium" >}}
-{{< figure src="https://iron-star.com/favicon/safari-pinned-tab.svg" alt="IronStar" caption="small" class="small" >}}
-{{< figure src="https://iron-star.com/favicon/safari-pinned-tab.svg" alt="IronStar" caption="left" class="left" >}}
-{{< figure src="https://iron-star.com/favicon/safari-pinned-tab.svg" alt="IronStar" caption="tiny" class="tiny" >}}
-{{< figure src="https://iron-star.com/favicon/safari-pinned-tab.svg" alt="IronStar" caption="right" class="right" >}}
+
+{{< figure src="https://iron-star.com/favicon/safari-pinned-tab.svg" alt="IronStar" caption="IronStar" class="right" >}}
 
 
 
@@ -50,6 +46,10 @@ series = ["race"]
 - Т2 2:45 
 - Бег 1:43:44 
 - **Финиш 4:48:01**
+
+{{< figure src="01.jpg" alt="IronStar" caption="IronStar" class="medium" >}}
+{{< figure src="02.jpg" alt="IronStar" caption="IronStar" class="medium" >}}
+
 
 
 {{< instagram C_ZuYajvQNR >}}
