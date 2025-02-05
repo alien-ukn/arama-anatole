@@ -24,10 +24,6 @@ series = ["race"]
 
 ## О гонке
 
-{{< figure src="https://iron-star.com/favicon/safari-pinned-tab.svg" alt="IronStar" caption="IronStar" class="right" >}}
-
-
-
 [IronStar Крылатское Half 2024](https://tristats.ru/result/ironstar/krylatskoe/half/2024)
 
 - Дата  25.08.2025
@@ -47,8 +43,8 @@ series = ["race"]
 - Бег 1:43:44 
 - **Финиш 4:48:01**
 
-{{< figure src="01.jpg" alt="IronStar" caption="IronStar" class="medium" >}}
-{{< figure src="02.jpg" alt="IronStar" caption="IronStar" class="medium" >}}
+{{< figure src="01.jpg" alt="Арама Анна" class="medium" >}}
+{{< figure src="02.jpg" alt="Arama Anna" class="medium" >}}
 
 
 
