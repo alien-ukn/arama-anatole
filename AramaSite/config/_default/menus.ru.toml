@@ -39,6 +39,12 @@
   weight = 520
   identifier = "certifications"
   url = "/certifications/"
+
+   [[main]]
+  name = "Тренеры"
+  weight = 550
+  identifier = "mycoach"
+  url = "/mycoach/"
  # parent = "accomplishments"
 
  # [[main]]
