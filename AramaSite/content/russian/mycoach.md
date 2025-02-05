@@ -9,9 +9,14 @@ author = "Arama Anna"
 
 
 ## Ляцкий Андрей
-[tristats.ru](https://tristats.ru/rus/profile/lyatskiy-andrey "tristats Lyatskiy Andrey")
+[tristats.ru Lyatskiy Andrey ](https://tristats.ru/rus/profile/lyatskiy-andrey "tristats Lyatskiy Andrey")
 
 ## Гостева Мария
 
-[tristats.ru](https://tristats.ru/rus/profile/gosteva-mariya)
+[tristats.ru Gosteva Mariya ](https://tristats.ru/rus/profile/gosteva-mariya)
+
 [MG Triathlon](https://t.me/mgtriathlon)
+
+
+{{< figure src="https://itra.run/images/icons/symbol-ITRA.png" alt="ITRA" class="left" >}}
+[ITRA ID 4139021](https://itra.run/api/RunnerSpace/GetRunnerSpace?runnerString=wCHjT3bactu1%2FSfy950qeQ%3D%3D)
