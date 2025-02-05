@@ -11,7 +11,7 @@ categories = [
     "triathlon",
     "race",
 ]
-series = ["report"]
+#series = ["report"]
 
 #aliases = ["240825-IronStar"]
 
