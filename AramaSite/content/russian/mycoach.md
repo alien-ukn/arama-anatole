@@ -8,6 +8,10 @@ author = "Arama Anna"
 Русский
 
 
-[tristats.ru](https://tristats.ru/rus/profile/arama-anna)
+## Ляцкий Андрей
+[tristats.ru](https://tristats.ru/rus/profile/lyatskiy-andrey "tristats Lyatskiy Andrey")
 
+## Гостева Мария
 
+[tristats.ru](https://tristats.ru/rus/profile/gosteva-mariya)
+[MG Triathlon](https://t.me/mgtriathlon)
