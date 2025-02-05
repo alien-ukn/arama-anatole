@@ -11,14 +11,14 @@ categories = [
     "triathlon",
     "race",
 ]
-#series = ["report"]
-
+series = ["race"]
+thumbnail= "images/ironstar-favicon-196x196.png"
 #aliases = ["240825-IronStar"]
 
 +++
+**4:48:01**
 
-отчет IronStar Крылатское Half 2024.
-4:48:01
+
 
 <!--more-->
 
@@ -33,6 +33,7 @@ categories = [
 - Мужчин  805
 
 ## Результат
+
 - Группа FPRO 
 - Место 9 
 - Плавание 30:26
