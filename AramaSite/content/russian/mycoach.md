@@ -24,7 +24,6 @@ author = "Arama Anna"
 
 
 
-[[socialIcons]]
-icon = "fa-brands fa-telegram"
-title = "Telegram"
-url = "https://t.me/anna_arama"
+<a href=”https://t.me/mgtriathlon>
+<i class="fa-brands fa-telegram"></i>
+</a>
