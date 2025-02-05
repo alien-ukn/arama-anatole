@@ -22,7 +22,7 @@ author = "Arama Anna"
 [ITRA ID 4139021](https://itra.run/api/RunnerSpace/GetRunnerSpace?runnerString=wCHjT3bactu1%2FSfy950qeQ%3D%3D)
 
 
-{{<fa-brands  fa-telegram >}}
+
 
 [[socialIcons]]
 icon = "fa-brands fa-telegram"
