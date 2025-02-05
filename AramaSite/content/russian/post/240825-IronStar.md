@@ -12,7 +12,7 @@ categories = [
     "race",
 ]
 series = ["race"]
-thumbnail= "images/ironstar-favicon-196x196.png"
+#thumbnail= "images/ironstar-favicon-196x196.png"
 #aliases = ["240825-IronStar"]
 
 +++
@@ -23,6 +23,8 @@ thumbnail= "images/ironstar-favicon-196x196.png"
 <!--more-->
 
 ## О гонке
+{{< figure src="images/ironstar-favicon-196x196.png" alt="image" caption="figure-medium" class="medium" >}}
+
 
 [IronStar Крылатское Half 2024](https://tristats.ru/result/ironstar/krylatskoe/half/2024)
 
