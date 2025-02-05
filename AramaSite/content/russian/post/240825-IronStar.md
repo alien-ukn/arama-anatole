@@ -23,7 +23,13 @@ series = ["race"]
 <!--more-->
 
 ## О гонке
-{{< figure src="https://iron-star.com/favicon/safari-pinned-tab.svg" alt="IrinStar" caption="figure-medium" class="medium" >}}
+{{< figure src="https://iron-star.com/favicon/safari-pinned-tab.svg" alt="IronStar" caption="big" class="big" >}}
+{{< figure src="https://iron-star.com/favicon/safari-pinned-tab.svg" alt="IronStar" caption="medium" class="medium" >}}
+{{< figure src="https://iron-star.com/favicon/safari-pinned-tab.svg" alt="IronStar" caption="small" class="small" >}}
+{{< figure src="https://iron-star.com/favicon/safari-pinned-tab.svg" alt="IronStar" caption="left" class="left" >}}
+{{< figure src="https://iron-star.com/favicon/safari-pinned-tab.svg" alt="IronStar" caption="tiny" class="tiny" >}}
+{{< figure src="https://iron-star.com/favicon/safari-pinned-tab.svg" alt="IronStar" caption="right" class="right" >}}
+
 
 
 [IronStar Крылатское Half 2024](https://tristats.ru/result/ironstar/krylatskoe/half/2024)
@@ -45,3 +51,5 @@ series = ["race"]
 - Бег 1:43:44 
 - **Финиш 4:48:01**
 
+
+{{< instagram C_ZuYajvQNR >}}
