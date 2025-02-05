@@ -21,4 +21,4 @@ author = "Arama Anna"
 {{< figure src="https://itra.run/images/icons/symbol-ITRA.png" alt="ITRA" class="left" >}}
 [ITRA ID 4139021](https://itra.run/api/RunnerSpace/GetRunnerSpace?runnerString=wCHjT3bactu1%2FSfy950qeQ%3D%3D)
 
-{{< fab fa-telegram>}}
+{{ fa-brands fa-telegram }}
