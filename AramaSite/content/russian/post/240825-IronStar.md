@@ -23,7 +23,7 @@ series = ["race"]
 <!--more-->
 
 ## О гонке
-{{< figure src="images/ironstar-favicon-196x196.png" alt="image" caption="figure-medium" class="medium" >}}
+{{< figure src="https://iron-star.com/favicon/safari-pinned-tab.svg" alt="IrinStar" caption="figure-medium" class="medium" >}}
 
 
 [IronStar Крылатское Half 2024](https://tristats.ru/result/ironstar/krylatskoe/half/2024)
