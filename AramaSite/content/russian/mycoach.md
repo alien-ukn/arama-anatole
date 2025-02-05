@@ -24,6 +24,10 @@ author = "Arama Anna"
 
 
 
-<a href=”https://t.me/mgtriathlon>
-<i class="fa-brands fa-telegram"></i>
-</a>
+{{< figure
+  src="/images/examples/zion-national-park.jpg"
+  alt="A photograph of Zion National Park"
+  link="https://t.me/mgtriathlon"
+  caption="MG Triathlon"
+  class="fa-brands fa-telegram"
+>}}
