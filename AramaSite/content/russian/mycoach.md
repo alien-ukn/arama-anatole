@@ -15,6 +15,11 @@ author = "Arama Anna"
 [tristats.ru Gosteva Mariya ](https://tristats.ru/rus/profile/gosteva-mariya)
 
 
+<a href="https://www.instagram.com/rusirongirl" target="_blank" >
+  <i class="fa-brands fa-instagram" style="font-size: 20px; margin-right: 8px;"></i>
+  rusirongirl
+</a>
+
 <a href="https://t.me/mgtriathlon" target="_blank" style="text-decoration: none; color: #333;">
   <i class="fa-brands fa-telegram" style="font-size: 20px; color: #0088cc; margin-right: 8px;"></i>
   MG Triathlon
