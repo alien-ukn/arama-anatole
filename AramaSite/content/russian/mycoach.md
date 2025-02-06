@@ -5,7 +5,6 @@ date = "2022-04-10"
 aliases = ["Мои тренеры"]
 author = "Arama Anna"
 +++
-Русский
 
 
 ## Ляцкий Андрей
@@ -17,13 +16,11 @@ author = "Arama Anna"
 
 [MG Triathlon](https://t.me/mgtriathlon)
 
-<a href=”https://bsky.app/profile/ijbeasley.bsky.social”>
-<i class="fa-brands fa-bluesky"></i>
-</a>
+
 
 <a href="https://t.me/mgtriathlon" target="_blank" style="text-decoration: none; color: #333;">
-  <i class="fab fa-telegram" style="font-size: 20px; color: #0088cc; margin-right: 8px;"></i>
-  MG Triathlon
+  <i class="fa-brands fa-telegram" style="font-size: 20px; color: #0088cc; margin-right: 8px;"></i>
+  MG Triathlon href
 </a>
 
 
