@@ -1,5 +1,5 @@
   [[main]]
-  name = "Home"
+  name = "Главная"
   identifier = "home"
   weight = 100
   url = "/"
@@ -27,21 +27,29 @@
 #  weight = 500
 #  identifier = "accomplishments"
 
-  [[main]]
-  name = "Гонки"
-  weight = 510
-  identifier = "awards"
-  url = "/awards/"
+#  [[main]]
+#  name = "Гонки"
+#  weight = 510
+#  identifier = "awards"
+#  url = "/awards/"
 #  parent = "accomplishments"  
 
+#  [[main]]
+#  name = "Сертификаты"
+#  weight = 520
+#  identifier = "certifications"
+#  url = "/certifications/"
+
   [[main]]
-  name = "Сертификаты"
+  name = "Я Тренер"
   weight = 520
-  identifier = "certifications"
-  url = "/certifications/"
+  identifier = "coach"
+  url = "/coach/"
+
+
 
    [[main]]
-  name = "Тренеры"
+  name = "Мои Тренеры"
   weight = 550
   identifier = "mycoach"
   url = "/mycoach/"
