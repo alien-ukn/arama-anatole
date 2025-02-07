@@ -18,8 +18,6 @@ author = "Arama Anna"
   tristats.ru  Lyatskiy Andrey
 </a>
 
-<br>
-
 <a href="https://www.instagram.com/andrey_lyatskiy" target="_blank" style="text-decoration: none; color: #333; transition: color 0.3s;" >
   <i class="fa-brands fa-instagram" style="font-size: 20px; color: #0088cc; margin-right: 8px"></i>
   andrey_lyatskiy
@@ -33,9 +31,9 @@ author = "Arama Anna"
   </span>
   ITRA ID 4241156
 </a>
+<br>
 
-
-{{< figure src="/images/lyatsky.jpg" alt="Ляцкий Андрей" class="medium" >}}
+{{< figure src="/images/lyatsky.jpg" alt="Ляцкий Андрей" class="small" >}}
 
 ## Гостева Мария
 
@@ -47,8 +45,6 @@ ICON X-Tri winner🥇🏔️
 
 Long distance (226) national Champion 🥇🥈🥇
 
-
-
 <a href="https://tristats.ru/rus/profile/gosteva-mariya" target="_blank" style="text-decoration: none; color: #333; display: flex; align-items: center;">
   <span style="display: inline-block; width: 20px; height: 20px; margin-right: 8px;">
     <img src="https://tristats.ru/images/favicon-32x32.png" alt="tristats.ru Icon" style="width: 100%; height: 100%; object-fit: contain; pointer-events: none;">
@@ -56,7 +52,6 @@ Long distance (226) national Champion 🥇🥈🥇
   tristats.ru Gosteva Mariya
 </a>
 
-<br>
 
 <a href="https://www.instagram.com/rusirongirl" target="_blank" style="text-decoration: none; color: #333; transition: color 0.3s;" >
   <i class="fa-brands fa-instagram" style="font-size: 20px; color: #0088cc; margin-right: 8px"></i>
@@ -79,4 +74,4 @@ Long distance (226) national Champion 🥇🥈🥇
   ITRA ID 4139021
 </a>
 
-{{< figure src="/images/gosteva.jpg" alt="Гостева Мария" class="medium" >}}
+{{< figure src="/images/gosteva.jpg" alt="Гостева Мария" class="small" >}}
