@@ -21,7 +21,7 @@ author = "Arama Anna"
 
 ## Гостева Мария
 
-{{< figure src="/static/images/gosteva.jpg" alt="Гостева Мария" class="medium" >}}
+{{< figure src="/images/gosteva.jpg" alt="Гостева Мария" class="medium" >}}
 
 Triathlete& runner
 ICON X-Tri winner🥇🏔️
