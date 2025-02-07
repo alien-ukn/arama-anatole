@@ -1,8 +1,8 @@
-[en]
-title = "My blog"
-weight = 1
-LanguageName = "EN"
-contentDir = "content/english"
+#[en]
+#title = "My blog"
+#weight = 1
+#LanguageName = "EN"
+#contentDir = "content/english"
 
 [ru]
 title = "Блог"

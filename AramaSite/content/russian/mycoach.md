@@ -21,6 +21,12 @@ author = "Arama Anna"
 
 ## Гостева Мария
 
+{{< figure src="/static/images/gosteva.jpg" alt="Гостева Мария" class="medium" >}}
+
+Triathlete& runner
+ICON X-Tri winner🥇🏔️
+Long distance (226) national Champion 🥇🥈🥇
+
 
 <a href="https://tristats.ru/rus/profile/gosteva-mariya" target="_blank" style="text-decoration: none; color: #333; display: flex; align-items: center;">
   <span style="display: inline-block; width: 20px; height: 20px; margin-right: 8px;">
