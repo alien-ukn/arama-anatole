@@ -21,7 +21,6 @@ author = "Arama Anna"
 
 ## Гостева Мария
 
-[tristats.ru Gosteva Mariya ](https://tristats.ru/rus/profile/gosteva-mariya)
 
 <a href="https://tristats.ru/rus/profile/gosteva-mariya" target="_blank" style="text-decoration: none; color: #333; display: flex; align-items: center;">
   <span style="display: inline-block; width: 20px; height: 20px; margin-right: 8px;">
@@ -32,15 +31,14 @@ author = "Arama Anna"
 
 
 <a href="https://www.instagram.com/rusirongirl" target="_blank" style="text-decoration: none; color: #333; transition: color 0.3s;" >
-  <i class="fa-brands fa-instagram" style="font-size: 20px; color: #0088cc; margin-right: 2px"></i>
+  <i class="fa-brands fa-instagram" style="font-size: 20px; color: #0088cc; margin-right: 8px"></i>
   rusirongirl
 </a>
 
 <br>
 
-
 <a href="https://t.me/mgtriathlon" target="_blank" style="text-decoration: none; color: #333; transition: color 0.3s;">
-  <i class="fa-brands fa-telegram" style="font-size: 20px; color: #0088cc; margin-right: 2px;"></i>
+  <i class="fa-brands fa-telegram" style="font-size: 20px; color: #0088cc; margin-right: 8px;"></i>
   MG Triathlon
 </a>
 
