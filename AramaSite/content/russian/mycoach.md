@@ -21,7 +21,7 @@ author = "Arama Anna"
   rusirongirl
 </a>
 
-;
+<br>
 
 
 <a href="https://t.me/mgtriathlon" target="_blank" style="text-decoration: none; color: #333;">
