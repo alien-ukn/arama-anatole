@@ -5,7 +5,7 @@
   url = "/"
 
   [[main]]
-  name = "Блог"
+  name = "Блог Арама Анны"
   weight = 200
   identifier = "posts"
   url = "/post/"
