@@ -72,7 +72,7 @@ url = "https://www.instagram.com/anna_arama"
 [[socialIcons]]
 icon = "fa-solid fa-envelope"
 title = "e-mail"
-url = "mailto:anna@arama.team"
+url = "mailto:anna@arama.pro"
 
 [mermaid]
 enable = false
