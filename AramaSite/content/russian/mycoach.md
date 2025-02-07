@@ -10,6 +10,15 @@ author = "Arama Anna"
 ## Ляцкий Андрей
 [tristats.ru Lyatskiy Andrey ](https://tristats.ru/rus/profile/lyatskiy-andrey "tristats Lyatskiy Andrey")
 
+
+
+<a href="https://itra.run/api/RunnerSpace/GetRunnerSpace?runnerString=HmGG11znYUiT6miPOBvvKg%3D%3D" target="_blank" style="text-decoration: none; color: #333; transition: color 0.3s;">
+  <img src="https://itra.run/images/icons/symbol-ITRA.png" alt="ITRA" style="width: 20px; height: 20px; margin-right: 8px;">
+  ITRA ID 4241156
+</a>
+
+
+
 ## Гостева Мария
 
 [tristats.ru Gosteva Mariya ](https://tristats.ru/rus/profile/gosteva-mariya)
@@ -31,8 +40,9 @@ author = "Arama Anna"
 
 <br>
 
-<a href="https://itra.run/api/RunnerSpace/GetRunnerSpace?runnerString=wCHjT3bactu1%2FSfy950qeQ%3D%3D" target="_blank" style="text-decoration: none; color: #333; transition: color 0.3s;">
-  <img src="https://itra.run/images/icons/symbol-ITRA.png" alt="ITRA" style="width: 20px; height: 20px; margin-right: 8px;">
+<a href="https://itra.run/api/RunnerSpace/GetRunnerSpace?runnerString=wCHjT3bactu1%2FSfy950qeQ%3D%3D" target="_blank" style="text-decoration: none; color: #333; display: flex; align-items: center;">
+  <span style="display: inline-block; width: 20px; height: 20px; margin-right: 8px;">
+    <img src="https://itra.run/images/icons/symbol-ITRA.png" alt="ITRA Icon" style="width: 100%; height: 100%; object-fit: contain; pointer-events: none;">
+  </span>
   ITRA ID 4139021
 </a>
-
