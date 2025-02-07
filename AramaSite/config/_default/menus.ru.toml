@@ -27,12 +27,12 @@
 #  weight = 500
 #  identifier = "accomplishments"
 
-#  [[main]]
-#  name = "Гонки"
-#  weight = 510
-#  identifier = "awards"
-#  url = "/awards/"
-#  parent = "accomplishments"  
+[[main]]
+name = "Награды"
+weight = 510
+identifier = "awards"
+url = "/awards/"
+#parent = "accomplishments"  
 
 #  [[main]]
 #  name = "Сертификаты"
