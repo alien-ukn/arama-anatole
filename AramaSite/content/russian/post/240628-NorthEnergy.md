@@ -70,4 +70,4 @@ series = ["race"]
 
 
 
-{{< instagram C84lh-rKKop/ >}}
+{{< instagram C84lh-rKKop >}}
