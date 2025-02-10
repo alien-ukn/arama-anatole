@@ -74,5 +74,10 @@ icon = "fa-solid fa-envelope"
 title = "e-mail"
 url = "mailto:anna@arama.pro"
 
+[[socialIcons]]
+icon = "fa-brands fa-strava"
+title = "strava"
+url = "https://www.strava.com/athletes/99577195"
+
 [mermaid]
 enable = false
