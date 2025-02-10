@@ -41,7 +41,10 @@ series = ["race"]
 - **Место в категории F18-23:** 1  
 - **Место в абсолютном зачете:** 1  
 - **Время этапов:**  
-  - Плавание: 23:32  
+  - <a href="https://www.strava.com/activities/11767906428" target="_blank" style="text-decoration: none; color: #333; transition: color 0.3s;">
+  <i class="fa-brands fa-strava" style="font-size: 20px; color: #0088cc; margin-right: 8px;"></i>
+  Плавание: 23:32 
+</a> 
   - Т1: 4:25  
   - Велогонка: 1:02:25  
   - Т2: 0:56  
