@@ -6,6 +6,6 @@
 
 [ru]
 title = "Блог"
-weight = 12
+weight = 1
 LanguageName = "RU"
 contentDir = "content/russian"
