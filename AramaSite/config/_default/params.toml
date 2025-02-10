@@ -39,7 +39,7 @@ toc = true
 # hidesidebar = true
 
 [simpleAnalytics]
-# enable = true
+enable = true
 # customurl = "https://analytics.example.com"
 
 [plausibleAnalytics]
