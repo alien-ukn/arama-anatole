@@ -27,21 +27,21 @@ localizedDates = true
         [markup.goldmark.renderer]
         unsafe=true
 
-#[taxonomies]
+[taxonomies]
 #    category = "categories"
 #    series = "series"
-#    tag = "tags"
+    tag = "tags"
 
-#[related]
-#  includeNewer = true
-#  threshold = 80
-#  toLower = true
-#[[related.indices]]
-#  name = 'keywords'
-#  weight = 100
-#[[related.indices]]
-#  name = 'tags'
-#  weight = 80
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = true
+[[related.indices]]
+  name = 'keywords'
+  weight = 100
+[[related.indices]]
+  name = 'tags'
+  weight = 80
 
 [services]
 # Enable Disqus.Disqus.Shortname
