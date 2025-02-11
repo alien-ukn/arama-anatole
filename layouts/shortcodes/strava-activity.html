@@ -1,0 +1,7 @@
+{{- $activityID := .Get 0 -}} <!-- Первый позиционный аргумент (ID активности) -->
+{{- $text := .Get 1 -}} <!-- Второй позиционный аргумент (текст) -->
+{{- $iconSize := "20px" -}} <!-- Размер иконки по умолчанию -->
+
+<a href="https://www.strava.com/activities/{{ $activityID }}" target="_blank" style="text-decoration: none; color: #333; transition: color 0.3s;">
+  <i class="fa-brands fa-strava" style="font-size: {{ $iconSize }}; color: red; margin-right: 8px;"></i>{{ $text }}
+</a>
