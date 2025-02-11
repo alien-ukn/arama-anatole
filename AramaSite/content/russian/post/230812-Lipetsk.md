@@ -11,7 +11,7 @@ categories = [
     "triathlon",
     "race",
 ]
-series = ["race"]
+#series = ["race"]
 
 keywords = ["Триатлон","Липецк"]
  

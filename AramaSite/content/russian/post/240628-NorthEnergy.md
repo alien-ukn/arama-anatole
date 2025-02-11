@@ -12,7 +12,7 @@ categories = [
     "triathlon",
     "race",
 ]
-series = ["race"]
+#series = ["race"]
 #thumbnail= "images/ironstar-favicon-196x196.png"
 #aliases = ["240825-IronStar"]
 

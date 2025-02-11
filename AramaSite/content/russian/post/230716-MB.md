@@ -12,7 +12,7 @@ categories = [
     "triathlon",
     "race"
 ]
-series = ["race"]
+#series = ["race"]
 
 
 +++

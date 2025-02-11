@@ -28,8 +28,8 @@ localizedDates = true
         unsafe=true
 
 [taxonomies]
-#    category = "categories"
-    series = ""
+    category = "categories"
+    series = "series"
     tag = "tags"
 
 [related]
