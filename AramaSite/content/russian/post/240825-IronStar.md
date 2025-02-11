@@ -10,6 +10,7 @@ tags = [
 categories = [
     "triathlon",
     "race",
+    "pro"
 ]
 series = ["race"]
 #thumbnail= "images/ironstar-favicon-196x196.png"
