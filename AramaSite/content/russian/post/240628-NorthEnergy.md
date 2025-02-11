@@ -41,11 +41,11 @@ series = ["race"]
 - **Место в категории F18-23:** 1  
 - **Место в абсолютном зачете:** 1  
 - **Время этапов:**  
-  - Плавание: <a href="https://www.strava.com/activities/11767906428" target="_blank" style="text-decoration: none; color: #333; transition: color 0.3s;"><i class="fa-brands fa-strava" style="font-size: 20px; color: red; margin-right: 8px;"></i>23:32</a>
-  - Т1: <a href="https://www.strava.com/activities/11767906443" target="_blank" style="text-decoration: none; color: #333; transition: color 0.3s;"><i class="fa-brands fa-strava" style="font-size: 20px; color: red; margin-right: 8px;"></i>4:25</a> 
-  - Велогонка: <a href="https://www.strava.com/activities/11767906604" target="_blank" style="text-decoration: none; color: #333; transition: color 0.3s;"><i class="fa-brands fa-strava" style="font-size: 20px; color: red; margin-right: 8px;"></i>1:02:25</a>   
-  - Т2: <a href="https://www.strava.com/activities/11767906484" target="_blank" style="text-decoration: none; color: #333; transition: color 0.3s;"><i class="fa-brands fa-strava" style="font-size: 20px; color: red; margin-right: 8px;"></i>0:56</a>     
-  - Бег: <a href="https://www.strava.com/activities/11767906530" target="_blank" style="text-decoration: none; color: #333; transition: color 0.3s;"><i class="fa-brands fa-strava" style="font-size: 20px; color: red; margin-right: 8px;"></i>41:18</a>    
+  - Плавание: {{< strava-activity 11767906428 "23:32" >}}
+  - Т1: {{< strava-activity 11767906443 "4:25" >}}
+  - Велогонка: {{< strava-activity 11767906604 "1:02:25" >}}
+  - Т2: {{< strava-activity 11767906484 "0:56" >}}   
+  - Бег: {{< strava-activity 11767906530 "41:18" >}}   
 - **Финиш:** 2:12:36
 
 **Организация и впечатления:**  
