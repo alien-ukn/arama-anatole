@@ -25,9 +25,9 @@ categories = [
 ## О гонке
 
 
-## О гонке
-
 [PushkinRun](https://pushkin-run.ru/)
+
+
 [Протокол](https://russiarunning.com/event/PushkinSanktPeterburg100let/results/10km)
 
 - Дата  03.09.2023
