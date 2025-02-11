@@ -29,7 +29,7 @@ localizedDates = true
 
 [taxonomies]
 #    category = "categories"
-#    series = "series"
+    series = ""
     tag = "tags"
 
 [related]
