@@ -29,7 +29,7 @@ listDateFormat = "02.01.2006"
 # readMore = true
 # postSectionName = "blog"
 relatedPosts = false
-numberOfRelatedPosts = 3
+numberOfRelatedPosts = 0
 # disableTitleCapitalization = true
 
 
