@@ -4,6 +4,7 @@ title = "IronStar Сочи Olympic relay 2023"
 date = "2023-10-08"
 description = "IronStar Сочи Olympic relay 2023"
 tags = [
+    "1 место",
     "olympic",
     "relay",
     "ironstar"
