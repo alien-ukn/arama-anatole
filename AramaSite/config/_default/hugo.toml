@@ -1,6 +1,7 @@
 baseURL = "https://arama.pro"
 languageCode = "ru"
 DefaultContentLanguage = "ru"
+
 title = "Arana Anna триатлет, тренер"
 
 # theme as hugo module
