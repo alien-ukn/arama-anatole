@@ -27,3 +27,10 @@ author = "Arama Anna"
   <i class="fa-brands fa-strava" style="font-size: 20px; color: #0088cc; margin-right: 8px;"></i>
   Strava Arama Anna
 </a>
+
+<a href="https://clubs.russiarunning.com/club/Lyatskiy_team" target="_blank" style="text-decoration: none; color: #333; display: flex; align-items: center;">
+  <span style="display: inline-block; width: 20px; height: 20px; margin-right: 8px;">
+    <img src="https://rrweb.russiarunning.com/files/2fe75cab-a24c-458a-8390-134b099a78bc" alt="tristats.ru Icon" style="width: 100%; height: 100%; object-fit: contain; pointer-events: none;">
+  </span>
+  russiarunning.com LyatskyTeam
+</a>
