@@ -9,7 +9,6 @@ tags = [
     "Samarkand",
     "1 место"
 ]
-]
 categories = [
     "triathlon",
     "race"
