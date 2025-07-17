@@ -17,7 +17,7 @@ categories = [
 +++
 **4:30:57**
 🥈
-
+<!--more-->
 ## О гонке
 
 [Challenge The Champiomship Šamorín](https://thechampionship.de/)
