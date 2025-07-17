@@ -27,7 +27,7 @@ categories = [
 
 [IronStar Крылатское Half 2024](https://tristats.ru/result/ironstar/krylatskoe/half/2024)
 
-**Дата:** 25.08.2025  
+**Дата:** 25.08.2024
 **Место проведения:** Москва, Крылатское, Россия  
 
 **Участники:**  
