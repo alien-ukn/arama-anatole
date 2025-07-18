@@ -9,7 +9,8 @@ tags = [
     "3 место"
 ]
 categories = [
-    "run"
+    "run",
+    "trail"
 ]
 
 +++
