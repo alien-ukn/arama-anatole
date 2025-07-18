@@ -43,7 +43,7 @@ author = "Arama Anna"
 
 
 
-## tristats.ru
+## Ссылки 
 
 <a href="https://tristats.ru/rus/profile/arama-anna" target="_blank" style="text-decoration: none; color: #333; display: flex; align-items: center;">
   <span style="display: inline-block; width: 20px; height: 20px; margin-right: 8px;">
@@ -51,8 +51,6 @@ author = "Arama Anna"
   </span>
   tristats.ru  Arama Anna
 </a>
-
-<br>
 
 <a href="https://www.strava.com/athletes/99577195" target="_blank" style="text-decoration: none; color: #333; transition: color 0.3s;">
   <i class="fa-brands fa-strava" style="font-size: 20px; color: #0088cc; margin-right: 8px;"></i>
