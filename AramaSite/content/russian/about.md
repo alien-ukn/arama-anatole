@@ -10,7 +10,7 @@ author = "Arama Anna"
 
 ### **Тренер и действующий спортсмен**  
 🏊‍♀️ **Тренер по плаванию и триатлону**  
-🚴‍♀️ **Амбассадор [R.A.W.Life](https://rawlifesport.com)**  
+🚴‍♀️ **Амбассадор** [R.A.W.Life](https://instagram.com/rawlifesport) 
 
 ---
 
