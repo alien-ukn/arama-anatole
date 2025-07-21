@@ -28,7 +28,6 @@ jobs:
         working-directory: ./AramaSite
         run: |
           ln -s ../layouts ./layouts
-          ln -s ../themes ./themes 
           hugo --gc --minify --themesDir ../..
 
       - name: Install rclone
