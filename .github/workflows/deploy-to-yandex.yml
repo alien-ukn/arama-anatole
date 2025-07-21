@@ -1,8 +1,8 @@
-name: Deploy Hugo to S3  Yandex
+name: Deploy Hugo to Yandex Cloud Storage rclone
 
 on:
   push:
-    branches: master
+    branches: mastre
 
 jobs:
   deploy:
@@ -19,37 +19,36 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      - name: Build Hugo site
+      - name: Build site
         run: hugo --minify
 
-      - name: Install AWS CLI
+      - name: Install rclone
         run: |
-          curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-          unzip awscliv2.zip
-          sudo ./aws/install
+          curl -O https://downloads.rclone.org/rclone-current-linux-amd64.deb
+          sudo dpkg -i rclone-current-linux-amd64.deb
+          rclone version
 
-      - name: Configure S3 Credentials
-        env:
-          S3_ENDPOINT: "https://s3.yandexcloud.net"  # Замените на ваш эндпоинт
-          S3_ACCESS_KEY: ${{ secrets.S3_ACCESS_KEY }}  # Аналог AWS_ACCESS_KEY_ID
-          S3_SECRET_KEY: ${{ secrets.S3_SECRET_KEY }}  # Аналог AWS_SECRET_ACCESS_KEY
-          S3_REGION: "ru-central1"  # Ваш регион (если есть)
-          S3_BUCKET: ${{ secrets.S3_BUCKET }}
+      - name: Configure rclone
         run: |
-          aws configure set aws_access_key_id $S3_ACCESS_KEY
-          aws configure set aws_secret_access_key $S3_SECRET_KEY
-          aws configure set default.region $S3_REGION
+          mkdir -p ~/.config/rclone
+          echo "[yandex]
+          type = s3
+          provider = Other
+          env_auth = false
+          access_key_id = ${{ secrets.S3_ACCESS_KEY }}
+          secret_access_key = ${{ secrets.S3_SECRET_KEY }}
+          endpoint = ${{ secrets.S3_BUCKET }}
+          region = ru-central1
+          acl = public-read" > ~/.config/rclone/rclone.conf
 
-      - name: Deploy to S3
-        env:
-          S3_ENDPOINT: "https://s3.yandexcloud.net"  # Ваш эндпоинт
+      - name: Deploy to Yandex Cloud
         run: |
-          aws s3 sync ./public s3://${{ secrets.S3_BUCKET }} \
-            --endpoint-url $S3_ENDPOINT \
-            --delete
-          # Обновляем index.html с правильными заголовками
-          aws s3 cp s3://${{ secrets.S3_BUCKET }}/index.html s3://${{ secrets.S3_BUCKET }}/index.html \
-            --endpoint-url $S3_ENDPOINT \
-            --metadata-directive REPLACE \
-            --cache-control "max-age=0,no-cache,no-store,must-revalidate" \
-            --content-type "text/html"
+          rclone sync ./public yandex:${{ secrets.S3_BUCKET }} \
+            --progress \
+            --s3-acl=public-read \
+            --s3-no-head-object  # Ускоряет загрузку
+          
+          # Принудительно обновляем index.html с правильными заголовками
+          rclone copy ./public/index.html yandex:${{ secrets.S3_BUCKET }} \
+            --header-upload "Cache-Control:no-cache, max-age=0" \
+            --header-upload "Content-Type:text/html"
