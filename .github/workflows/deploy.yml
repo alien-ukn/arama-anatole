@@ -1,0 +1,55 @@
+name: Deploy Hugo to S3-Compatible Storage
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive  # Важно для тем Hugo
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Build Hugo site
+        run: hugo --minify
+
+      - name: Install AWS CLI (для S3-совместимых API)
+        run: |
+          curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+          unzip awscliv2.zip
+          sudo ./aws/install
+
+      - name: Configure S3 Credentials
+        env:
+          S3_ENDPOINT: "https://s3.yandexcloud.net"  # Замените на ваш эндпоинт
+          S3_ACCESS_KEY: ${{ secrets.S3_ACCESS_KEY }}  # Аналог AWS_ACCESS_KEY_ID
+          S3_SECRET_KEY: ${{ secrets.S3_SECRET_KEY }}  # Аналог AWS_SECRET_ACCESS_KEY
+          S3_REGION: "ru-central1"  # Ваш регион (если есть)
+          S3_BUCKET: ${{ secrets.S3_BUCKET }}
+        run: |
+          aws configure set aws_access_key_id $S3_ACCESS_KEY
+          aws configure set aws_secret_access_key $S3_SECRET_KEY
+          aws configure set default.region $S3_REGION
+
+      - name: Deploy to S3
+        env:
+          S3_ENDPOINT: "https://s3.yandexcloud.net"  # Ваш эндпоинт
+        run: |
+          aws s3 sync ./public s3://${{ secrets.S3_BUCKET }} \
+            --endpoint-url $S3_ENDPOINT \
+            --delete
+          # Обновляем index.html с правильными заголовками
+          aws s3 cp s3://${{ secrets.S3_BUCKET }}/index.html s3://${{ secrets.S3_BUCKET }}/index.html \
+            --endpoint-url $S3_ENDPOINT \
+            --metadata-directive REPLACE \
+            --cache-control "max-age=0,no-cache,no-store,must-revalidate" \
+            --content-type "text/html"
