@@ -5,7 +5,7 @@ DefaultContentLanguage = "ru"
 title = "Arana Anna триатлет, тренер"
 
 # theme as hugo module
-theme = "github.com/lxndrblz/anatole"
+theme = ["github.com/lxndrblz/anatole"]
 # theme as git submodule
 #theme = "anatole"
 
