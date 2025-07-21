@@ -1,4 +1,4 @@
-name: Deploy Hugo Yandexw rclone
+name: Deploy Yandex rclone
 
 on:
   push:
@@ -37,18 +37,13 @@ jobs:
           env_auth = false
           access_key_id = ${{ secrets.S3_ACCESS_KEY }}
           secret_access_key = ${{ secrets.S3_SECRET_KEY }}
-          endpoint = ${{ secrets.S3_BUCKET }}
+          endpoint = https://storage.yandexcloud.net
           region = ru-central1
           acl = public-read" > ~/.config/rclone/rclone.conf
 
-      - name: Deploy to Yandex Cloud
-        run: |
-          rclone sync ./public yandex:${{ secrets.S3_BUCKET }} \
+        - name: Deploy to Yandex Cloud
+          run: |
+            rclone sync ./public yandex:${{ secrets.S3_BUCKET }} \
             --progress \
             --s3-acl=public-read \
-            --s3-no-head-object  # Ускоряет загрузку
-          
-          # Принудительно обновляем index.html с правильными заголовками
-          rclone copy ./public/index.html yandex:${{ secrets.S3_BUCKET }} \
-            --header-upload "Cache-Control:no-cache, max-age=0" \
-            --header-upload "Content-Type:text/html"
+            --s3-no-head-object
