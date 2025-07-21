@@ -41,7 +41,7 @@ jobs:
           acl = public-read" > ~/.config/rclone/rclone.conf
 
       - name: Deploy to Yandex Cloud
-          run: |
+        run: |
             rclone sync ./public yandex:${{ secrets.S3_BUCKET }} \
             --progress \
             --s3-acl=public-read \
