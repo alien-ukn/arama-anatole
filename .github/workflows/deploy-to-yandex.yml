@@ -23,7 +23,7 @@ jobs:
 
       - name: Build site
         working-directory: ./AramaSite
-        run: hugo --gc --minify --themesDir ../.. 
+        run: hugo --gc --minify --themesDir ../.. --layoutDir ../layouts
 
 
       - name: Install rclone
