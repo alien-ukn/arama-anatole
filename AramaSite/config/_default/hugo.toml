@@ -9,7 +9,7 @@ theme = ["github.com/lxndrblz/anatole"]
 # theme as git submodule
 #theme = "anatole"
 
-#assetDir= "../assets"
+assetDir= "../assets"
 #verbose= true
 #verboseLog= true
 
