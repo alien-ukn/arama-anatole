@@ -30,13 +30,9 @@ jobs:
         working-directory: ./AramaSite
         run: |
           ln -s ../layouts ./layouts || true
-          ln -s ../content ./content || true
           ln -s ../themes ./themes || true
-          ln -s ../assets ./assets || true
-          ln -s ../static ./static || true
           
           hugo --gc --minify --verbose \
-            --contentDir=../content \
             --layoutDir=../layouts \
             --themesDir=../themes
           
