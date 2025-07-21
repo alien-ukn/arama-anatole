@@ -26,8 +26,7 @@ jobs:
         run: |
           curl -O https://downloads.rclone.org/rclone-current-linux-amd64.deb
           sudo dpkg -i rclone-current-linux-amd64.deb
-          rclone version
-          
+
       - name: Configure rclone
         run: |
           mkdir -p ~/.config/rclone
