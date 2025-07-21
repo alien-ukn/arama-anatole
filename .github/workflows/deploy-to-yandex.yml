@@ -19,17 +19,14 @@ jobs:
         with:
           hugo-version: 'latest'
           extended: true
-      
-#      - name: Initialize Hugo Modules
-#        working-directory: ./AramaSite  # Указываем папку с проектом Hugo
-#        run: hugo mod get -u  # Обновляем/загружаем модули
+ 
 
       - name: Build site
         working-directory: ./AramaSite
         run: |
           ln -s ../layouts ./layouts
           ln -s ../themes ./themes
-          hugo --gc --minify --themesDir../themes
+          hugo --gc --minify --themesDir ../themes
 
       - name: Install rclone
         run: |
