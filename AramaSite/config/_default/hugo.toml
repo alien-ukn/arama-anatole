@@ -10,6 +10,8 @@ theme = ["github.com/lxndrblz/anatole"]
 #theme = "anatole"
 
 assetDir= "../assets"
+staticDir = "../static"
+
 #verbose= true
 #verboseLog= true
 
