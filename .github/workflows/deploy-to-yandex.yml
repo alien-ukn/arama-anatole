@@ -1,4 +1,4 @@
-name: Deploy Hugo to S3-Compatible Storage
+name: Deploy Hugo to S3  Yandex
 
 on:
   push:
