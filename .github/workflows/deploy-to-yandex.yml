@@ -1,8 +1,8 @@
-name: Deploy Hugo to Yandex Cloud Storage rclone
+name: Deploy Hugo Yandexw rclone
 
 on:
   push:
-    branches: mastre
+    branches: master
 
 jobs:
   deploy:
