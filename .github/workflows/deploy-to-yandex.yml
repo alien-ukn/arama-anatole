@@ -20,7 +20,9 @@ jobs:
           extended: true
 
       - name: Build site
-        run: cd AramaSite &&  hugo --gc --minify --themesDir ../..
+        run: |
+          cd AramaSite 
+          hugo --gc --minify --themesDir ../..
 
       - name: Install rclone
         run: |
