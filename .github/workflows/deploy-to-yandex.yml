@@ -28,7 +28,8 @@ jobs:
         working-directory: ./AramaSite
         run: |
           ln -s ../layouts ./layouts
-          hugo --gc --minify --themesDir ../..
+          ln -s ../themes ./themes
+          hugo --gc --minify --themesDir../themes
 
       - name: Install rclone
         run: |
@@ -50,7 +51,7 @@ jobs:
 
       - name: Deploy to Yandex Cloud
         run: |
-            rclone sync ./public yandex:${{ secrets.S3_BUCKET }} \
+            rclone sync ./AramaSite/public yandex:${{ secrets.S3_BUCKET }} \
             --progress \
             --s3-acl=public-read \
             --s3-no-head-object
