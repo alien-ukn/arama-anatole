@@ -24,7 +24,7 @@ jobs:
       - name: Build site
         working-directory: ./AramaSite
         run: hugo --gc --minify --themesDir ../.. 
-        
+
 
       - name: Install rclone
         run: |
@@ -50,3 +50,6 @@ jobs:
             --progress \
             --s3-acl=public-read \
             --s3-no-head-object
+            rclone copy ./public/index.html yandex:${{ secrets.S3_BUCKET }} \
+              --header-upload "Cache-Control:no-cache, max-age=0" \
+              --header-upload "Content-Type:text/html""
