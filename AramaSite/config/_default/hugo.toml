@@ -57,3 +57,6 @@ localizedDates = true
 # Google Analytics
   [services.googleAnalytics]
     ID = 'G-4F2FPX2SZ1'
+
+[params]
+    yandexMetrika = true
