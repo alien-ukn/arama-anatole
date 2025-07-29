@@ -3,7 +3,7 @@
 +++
 author = "Arama Anna"
 title = "Путешествие на Алтай Wild Siberia. Неделя первая: дневник триатлета 2025"
-date = "2025-05-14"
+date = "2025-07-29"
 description = "Путешествие на Алтай Wild Siberia. Неделя первая: дневник триатлета"
 tags = [
     "trip"
