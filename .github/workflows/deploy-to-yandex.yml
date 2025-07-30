@@ -49,6 +49,7 @@ jobs:
         run: |
             rclone sync ./AramaSite/public yandex:${{ secrets.S3_BUCKET }} \
             --cache-info-age=24h \
+            --s3-cache-ttl=1h \
             --s3-acl=public-read \
             --s3-no-head-object
 #            --progress \
