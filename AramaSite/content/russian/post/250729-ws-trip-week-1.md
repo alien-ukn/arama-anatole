@@ -12,8 +12,7 @@ tags = [
 categories = [
     "Wild Siberia"
 ]
-image = "00.jpg"
-thumbnail ="images/250729-ws-trip-week-1.jpg"
+images=["images/250729-ws-trip-week-1.jpg"]
 
 +++
 Wild Siberia Xtreme Triathlon
