@@ -12,7 +12,7 @@ tags = [
 categories = [
     "Wild Siberia"
 ]
-
+image = "00.jpg"
 +++
 Wild Siberia Xtreme Triathlon
 Неделя первая
