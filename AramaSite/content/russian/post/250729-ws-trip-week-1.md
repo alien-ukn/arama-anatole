@@ -12,11 +12,13 @@ tags = [
 categories = [
     "Wild Siberia"
 ]
-image = "00.jpg"
+featured_image = "00.jpg"
+
+
 +++
 Wild Siberia Xtreme Triathlon
 Неделя первая
-🥇
+
 <!--more-->
 # 🏔️ Путешествие на Алтай. Неделя первая
 
