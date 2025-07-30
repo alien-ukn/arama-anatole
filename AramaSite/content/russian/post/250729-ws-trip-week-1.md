@@ -12,7 +12,7 @@ tags = [
 categories = [
     "Wild Siberia"
 ]
-featured_image = "00.jpg"
+image = "00.jpg"
 
 
 +++
