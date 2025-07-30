@@ -48,9 +48,6 @@ jobs:
       - name: Deploy to Yandex Cloud
         run: |
             rclone sync ./AramaSite/public yandex:${{ secrets.S3_BUCKET }} \
-            --progress \
             --s3-acl=public-read \
             --s3-no-head-object
-#            rclone copy ./public/index.html yandex:${{ secrets.S3_BUCKET }} \
-#              --header-upload "Cache-Control:no-cache, max-age=0" \
-#              --header-upload "Content-Type:text/html""
+#            --progress \
