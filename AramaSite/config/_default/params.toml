@@ -12,6 +12,7 @@ customCss = []
 customJs = [] 
 mainSections = ["post"]
 #images = ["images/site-feature-tumba1.png"]
+images=["images/profile.jpg"]
 doNotLoadAnimations = false
 # Form Spree Contact Form
 #contactFormAction = "https://formspree.io/f/your-form-hash-here"
