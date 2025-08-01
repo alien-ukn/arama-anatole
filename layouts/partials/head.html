@@ -137,7 +137,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="{{ .Site.Params.favicon | relURL }}favicon-16x16.png" />
 
 <!-- так было <link rel="canonical" href="{{ .Permalink }}" /> -->
-  <link rel="canonical" href="{{ .Site.BaseURL }}{{ strings.TrimPrefix "/russian" .RelPermalink }}{{ with .URL.Query }}?{{ . | urlquery }}{{ end }}" / 
+   <link rel="canonical" href="{{ .Site.BaseURL }}{{ strings.TrimPrefix "/russian" .RelPermalink }}{{ with .URL.Query }}?{{ . | urlquery }}{{ end }}" />
 
 
   <!-- RSS -->
