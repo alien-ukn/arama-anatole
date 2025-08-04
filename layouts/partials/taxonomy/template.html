@@ -1,11 +1,12 @@
+{{- $items := .items | uniq -}}
 {{- $linkClass := .linkClass -}}
 {{- $linkBase := .linkBase -}}
 
-<span>
-  {{- range $index, $el := .items -}}
-    {{- $item := replace . "#" "%23" -}}
-    {{- $item = replace $item "." "%2e" -}}
-    {{- $link := printf "/%s/%s/" $linkBase ($item | urlize) | lower -}}
-    <a class="{{ $linkClass }}" href="{{ $link }}">{{ . }}</a>
+<div class="taxonomy-container">
+  {{- range $items -}}
+    {{ $url := printf "/%s/%s/" $linkBase (. | urlize | lower) }}
+    {{ if not (in $.Page.Site.RegularPages $url) }}
+      <a class="{{ $linkClass }}" href="{{ $url }}">{{ . }}</a>
+    {{ end }}
   {{- end -}}
-</span>
+</div>
