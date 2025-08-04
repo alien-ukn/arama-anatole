@@ -1,15 +1,17 @@
+{{- $context := .context -}}
 {{- $linkClass := .linkClass -}}
 {{- $linkBase := .linkBase -}}
+{{- $items := .items -}}
 
 <span>
-  {{- range $index, $el := .items -}}
-    {{- $item := replace . "#" "%23" -}}
+  {{- range $index, $el := $items -}}
+    {{- $item := replace $el "#" "%23" -}}
     {{- $item = replace $item "." "%2e" -}}
     {{- $link := (printf "%s/%s/" $linkBase ($item | urlize)) -}}
-    {{- if eq .Site.Language.Lang "ru" -}}
-      <a class="{{ $linkClass }}" href="{{ $link | relURL }}">{{- . -}}</a>
+    {{- if eq $context.Site.Language.Lang "ru" -}}
+      <a class="{{ $linkClass }}" href="{{ $link | relURL }}">{{- $el -}}</a>
     {{- else -}}
-      <a class="{{ $linkClass }}" href="{{ $link | relLangURL }}">{{- . -}}</a>
+      <a class="{{ $linkClass }}" href="{{ $link | relLangURL }}">{{- $el -}}</a>
     {{- end -}}
   {{- end -}}
 </span>
