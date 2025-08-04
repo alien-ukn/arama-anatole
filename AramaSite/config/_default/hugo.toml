@@ -60,3 +60,8 @@ localizedDates = true
 
 [params]
     yandexMetrika = true
+
+
+[permalinks]
+  tags = "/tags/:slug/"
+  categories = "/categories/:slug/"

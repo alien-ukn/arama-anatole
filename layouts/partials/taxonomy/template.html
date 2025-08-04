@@ -5,7 +5,7 @@
   {{- range $index, $el := .items -}}
     {{- $item := replace . "#" "%23" -}}
     {{- $item = replace $item "." "%2e" -}}
-    {{- $link := (printf "%s/%s/" $linkBase ($item | urlize)) | relURL -}}
-    <a class="{{ $linkClass }}" href="{{ $link }}">{{- . -}}</a>
+    {{- $link := printf "/%s/%s/" $linkBase ($item | urlize) | lower -}}
+    <a class="{{ $linkClass }}" href="{{ $link }}">{{ . }}</a>
   {{- end -}}
 </span>
