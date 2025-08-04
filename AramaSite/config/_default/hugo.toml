@@ -1,6 +1,7 @@
 baseURL = "https://arama.pro"
 languageCode = "ru"
 DefaultContentLanguage = "ru"
+
 defaultContentLanguageInSubdir = false
 enableMissingTranslationPlaceholders = false
 
