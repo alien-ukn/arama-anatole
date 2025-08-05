@@ -6,9 +6,7 @@
     <!-- Replace certain special characters with their URL encoded counterparts -->
     {{- $item := replace . "#" "%23" -}}
     {{- $item = replace $item "." "%2e" -}}
-    {{- $link := ( printf "/%s/" ( $item | urlize ) ) | relURL -}}
-    {{- /* Убираем языковой префикс из URL */ -}}
-    {{- $link = $link | replaceRE "^/(russian|english|ru|en)/" "/" -}}
+    {{- $link := ( printf "/russian/%s/%s/" $linkBase ( $item | urlize ) ) | relURL -}}
     <a class="{{ $linkClass }}" href="{{ $link }}">{{- . -}}</a>
   {{- end -}}
 </span>
