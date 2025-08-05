@@ -8,13 +8,30 @@
   >
     {{ range .Data.Pages.GroupByDate "2006" }}
       <div class="archive__heading">{{ .Key }}</div>
-      {{ range .Pages }}
+      
+      {{- /* Создаем словарь для хранения уникальных страниц */ -}}
+      {{- $uniquePages := dict -}}
+      {{- $yearPages := slice -}}
+      
+      {{- /* Дедуплицируем страницы по базовому имени файла */ -}}
+      {{- range .Pages -}}
+        {{- $pageKey := .File.TranslationBaseName | default .Slug -}}
+        {{- if not (index $uniquePages $pageKey) -}}
+          {{- $uniquePages = merge $uniquePages (dict $pageKey .) -}}
+          {{- $yearPages = $yearPages | append . -}}
+        {{- end -}}
+      {{- end -}}
+      
+      {{- /* Выводим только уникальные страницы */ -}}
+      {{ range $yearPages }}
         <ul class="archive__list">
           <li class="archive__list-item">
+            {{- /* Убираем языковой префикс из URL */ -}}
+            {{- $cleanLink := .RelPermalink | replaceRE "^/[a-z]+/" "/" -}}
             {{ if (eq .Site.Params.disableArchiveTitleStyling true) }}
-              <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a>
+              <a class="archive__list-title" href="{{ $cleanLink }}" title="{{ .Title }}">{{ .Title }}</a>
             {{ else }}
-              <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ upper .Title }}</a>
+              <a class="archive__list-title" href="{{ $cleanLink }}" title="{{ .Title }}">{{ upper .Title }}</a>
             {{ end }}
             <div class="archive__list-date">
               {{ if isset .Site.Params "listdateformat" }}
