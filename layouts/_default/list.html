@@ -15,7 +15,12 @@
       
       {{- /* Дедуплицируем страницы по базовому имени файла */ -}}
       {{- range .Pages -}}
-        {{- $pageKey := .File.TranslationBaseName | default .Slug -}}
+        {{- $pageKey := "" -}}
+        {{- if .File -}}
+          {{- $pageKey = .File.TranslationBaseName -}}
+        {{- else -}}
+          {{- $pageKey = .Slug -}}
+        {{- end -}}
         {{- if not (index $uniquePages $pageKey) -}}
           {{- $uniquePages = merge $uniquePages (dict $pageKey .) -}}
           {{- $yearPages = $yearPages | append . -}}
