@@ -23,11 +23,24 @@
       animated fadeInDown
     {{ end }}"
   >
-    {{ range $uniquePagesList.GroupByDate "2006" }}
-      <div class="archive__heading">{{ .Key }}</div>
+    {{- /* Группируем дедуплицированные страницы по годам вручную */ -}}
+    {{- $pagesByYear := dict -}}
+    {{- range $uniquePagesList -}}
+      {{- $year := .Date.Format "2006" -}}
+      {{- $yearPages := index $pagesByYear $year | default slice -}}
+      {{- $yearPages = $yearPages | append . -}}
+      {{- $pagesByYear = merge $pagesByYear (dict $year $yearPages) -}}
+    {{- end -}}
+    
+    {{- /* Сортируем годы по убыванию */ -}}
+    {{- $sortedYears := $pagesByYear | keys | sort | reverse -}}
+    
+    {{- range $year := $sortedYears -}}
+      {{- $yearPages := index $pagesByYear $year -}}
+      <div class="archive__heading">{{ $year }}</div>
       
       {{- /* Теперь просто выводим уже дедуплицированные страницы */ -}}
-      {{ range .Pages }}
+      {{ range $yearPages }}
         <ul class="archive__list">
           <li class="archive__list-item">
             {{- /* Убираем языковой префикс из URL */ -}}
