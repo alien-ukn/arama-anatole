@@ -6,11 +6,12 @@ title = "Путешествие на Чемпионат мира в Словак
 date = "2025-05-14"
 description = "Путешествие на Чемпионат мира в Словакию: дневник триатлета"
 tags = [
-    "trip"
+    "trip",
+    "Šamorín"
 ]
 
 categories = [
-    "Šamorín"
+    "champiomship"
 ]
 
 +++
