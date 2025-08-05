@@ -1,17 +1,27 @@
 {{- $linkClass := .linkClass -}}
 {{- $linkBase := .linkBase -}}
-{{- $uniqueItems := dict -}}
+{{- $uniquePages := dict -}}
 <span>
  {{- range $index, $el := .items -}}
-  {{- $cleanItem := . | strings.TrimSpace | strings.ToLower -}}
-  {{- if not (index $uniqueItems $cleanItem) -}}
-   {{- $uniqueItems = merge $uniqueItems (dict $cleanItem .) -}}
-  {{- end -}}
- {{- end -}}
- {{- range $key, $value := $uniqueItems -}}
-  {{- $item := replace $value "#" "%23" -}}
+  {{- $item := replace . "#" "%23" -}}
   {{- $item = replace $item "." "%2e" -}}
   {{- $link := ( printf "%s/%s/" $linkBase ( $item | urlize ) ) | relURL -}}
-  <a class="{{ $linkClass }}" href="{{ $link }}">{{- $value -}}</a>
+  
+  {{- /* Получаем все страницы с этим тегом */ -}}
+  {{- $tagPages := where site.Pages ".Params.tags" "intersect" (slice .) -}}
+  
+  {{- range $tagPages -}}
+    {{- /* Создаем уникальный ключ на основе slug или файла статьи */ -}}
+    {{- $pageKey := .File.TranslationBaseName | default .Slug -}}
+    {{- if not (index $uniquePages $pageKey) -}}
+      {{- $uniquePages = merge $uniquePages (dict $pageKey .) -}}
+    {{- end -}}
+  {{- end -}}
+ {{- end -}}
+
+ {{- /* Выводим только уникальные страницы */ -}}
+ {{- range $key, $page := $uniquePages -}}
+  {{- $cleanLink := $page.RelPermalink | replaceRE "^/[a-z]{2,3}/" "/" -}}
+  <a class="{{ $linkClass }}" href="{{ $cleanLink }}">{{ $page.Title }}</a>
  {{- end -}}
 </span>
