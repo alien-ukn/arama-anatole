@@ -1,11 +1,17 @@
 {{- $linkClass := .linkClass -}}
 {{- $linkBase := .linkBase -}}
-{{- $uniqueItems := .items | uniq -}}
+{{- $uniqueItems := dict -}}
 <span>
- {{- range $index, $el := $uniqueItems -}}
-  {{- $item := replace . "#" "%23" -}}
+ {{- range $index, $el := .items -}}
+  {{- $cleanItem := . | strings.TrimSpace | strings.ToLower -}}
+  {{- if not (index $uniqueItems $cleanItem) -}}
+   {{- $uniqueItems = merge $uniqueItems (dict $cleanItem .) -}}
+  {{- end -}}
+ {{- end -}}
+ {{- range $key, $value := $uniqueItems -}}
+  {{- $item := replace $value "#" "%23" -}}
   {{- $item = replace $item "." "%2e" -}}
   {{- $link := ( printf "%s/%s/" $linkBase ( $item | urlize ) ) | relURL -}}
-  <a class="{{ $linkClass }}" href="{{ $link }}">{{- . -}}</a>
+  <a class="{{ $linkClass }}" href="{{ $link }}">{{- $value -}}</a>
  {{- end -}}
 </span>
