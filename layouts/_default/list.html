@@ -1,4 +1,21 @@
 {{ define "main" }}
+  {{- /* Сначала дедуплицируем все страницы глобально */ -}}
+  {{- $allUniquePages := dict -}}
+  {{- $uniquePagesList := slice -}}
+  
+  {{- range .Data.Pages -}}
+    {{- $pageKey := "" -}}
+    {{- if .File -}}
+      {{- $pageKey = .File.TranslationBaseName -}}
+    {{- else -}}
+      {{- $pageKey = .Slug -}}
+    {{- end -}}
+    {{- if not (index $allUniquePages $pageKey) -}}
+      {{- $allUniquePages = merge $allUniquePages (dict $pageKey .) -}}
+      {{- $uniquePagesList = $uniquePagesList | append . -}}
+    {{- end -}}
+  {{- end -}}
+
   <div
     class="archive {{ with .Site.Params.doNotLoadAnimations }}
       .
@@ -6,29 +23,11 @@
       animated fadeInDown
     {{ end }}"
   >
-    {{ range .Data.Pages.GroupByDate "2006" }}
+    {{ range $uniquePagesList.GroupByDate "2006" }}
       <div class="archive__heading">{{ .Key }}</div>
       
-      {{- /* Создаем словарь для хранения уникальных страниц */ -}}
-      {{- $uniquePages := dict -}}
-      {{- $yearPages := slice -}}
-      
-      {{- /* Дедуплицируем страницы по базовому имени файла */ -}}
-      {{- range .Pages -}}
-        {{- $pageKey := "" -}}
-        {{- if .File -}}
-          {{- $pageKey = .File.TranslationBaseName -}}
-        {{- else -}}
-          {{- $pageKey = .Slug -}}
-        {{- end -}}
-        {{- if not (index $uniquePages $pageKey) -}}
-          {{- $uniquePages = merge $uniquePages (dict $pageKey .) -}}
-          {{- $yearPages = $yearPages | append . -}}
-        {{- end -}}
-      {{- end -}}
-      
-      {{- /* Выводим только уникальные страницы */ -}}
-      {{ range $yearPages }}
+      {{- /* Теперь просто выводим уже дедуплицированные страницы */ -}}
+      {{ range .Pages }}
         <ul class="archive__list">
           <li class="archive__list-item">
             {{- /* Убираем языковой префикс из URL */ -}}
