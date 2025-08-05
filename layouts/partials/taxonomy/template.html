@@ -1,27 +1,19 @@
 {{- $linkClass := .linkClass -}}
 {{- $linkBase := .linkBase -}}
-{{- $uniquePages := dict -}}
+{{- $uniqueLinks := dict -}}
 <span>
  {{- range $index, $el := .items -}}
   {{- $item := replace . "#" "%23" -}}
   {{- $item = replace $item "." "%2e" -}}
   {{- $link := ( printf "%s/%s/" $linkBase ( $item | urlize ) ) | relURL -}}
   
-  {{- /* Получаем все страницы с этим тегом */ -}}
-  {{- $tagPages := where site.Pages ".Params.tags" "intersect" (slice .) -}}
+  {{- /* Убираем языковой префикс для создания базового URL */ -}}
+  {{- $baseLink := $link | replaceRE "^/[a-z]{2,}/" "/" -}}
   
-  {{- range $tagPages -}}
-    {{- /* Создаем уникальный ключ на основе slug или файла статьи */ -}}
-    {{- $pageKey := .File.TranslationBaseName | default .Slug -}}
-    {{- if not (index $uniquePages $pageKey) -}}
-      {{- $uniquePages = merge $uniquePages (dict $pageKey .) -}}
-    {{- end -}}
+  {{- /* Проверяем, не добавляли ли мы уже этот базовый URL */ -}}
+  {{- if not (index $uniqueLinks $baseLink) -}}
+    {{- $uniqueLinks = merge $uniqueLinks (dict $baseLink true) -}}
+    <a class="{{ $linkClass }}" href="{{ $baseLink }}">{{- . -}}</a>
   {{- end -}}
- {{- end -}}
-
- {{- /* Выводим только уникальные страницы */ -}}
- {{- range $key, $page := $uniquePages -}}
-  {{- $cleanLink := $page.RelPermalink | replaceRE "^/[a-z]{2,3}/" "/" -}}
-  <a class="{{ $linkClass }}" href="{{ $cleanLink }}">{{ $page.Title }}</a>
  {{- end -}}
 </span>
