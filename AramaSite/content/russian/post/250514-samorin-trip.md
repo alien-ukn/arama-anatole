@@ -10,7 +10,7 @@ tags = [
 ]
 
 categories = [
-    "Samorin"
+    "Šamorín"
 ]
 
 +++
