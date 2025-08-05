@@ -1,19 +1,13 @@
 {{- $linkClass := .linkClass -}}
 {{- $linkBase := .linkBase -}}
-{{- $uniqueLinks := dict -}}
+
+
 <span>
- {{- range $index, $el := .items -}}
-  {{- $item := replace . "#" "%23" -}}
-  {{- $item = replace $item "." "%2e" -}}
-  {{- $link := ( printf "%s/%s/" $linkBase ( $item | urlize ) ) | relURL -}}
-  
-  {{- /* Убираем языковой префикс для создания базового URL */ -}}
-  {{- $baseLink := $link | replaceRE "^/[a-z]{2,}/" "/" -}}
-  
-  {{- /* Проверяем, не добавляли ли мы уже этот базовый URL */ -}}
-  {{- if not (index $uniqueLinks $baseLink) -}}
-    {{- $uniqueLinks = merge $uniqueLinks (dict $baseLink true) -}}
-    <a class="{{ $linkClass }}" href="{{ $baseLink }}">{{- . -}}</a>
+  {{- range $index, $el := .items -}}
+    <!-- Replace certain special characters with their URL encoded counterparts -->
+    {{- $item := replace . "#" "%23" -}}
+    {{- $item = replace $item "." "%2e" -}}
+    {{- $link := ( printf "%s/%s/" $linkBase ( $item | urlize ) ) | relLangURL -}}
+    <a class="{{ $linkClass }}" href="{{ $link }}">{{- . -}}</a>
   {{- end -}}
- {{- end -}}
 </span>
