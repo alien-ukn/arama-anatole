@@ -23,54 +23,46 @@
       animated fadeInDown
     {{ end }}"
   >
-    {{- /* Группируем дедуплицированные страницы по годам вручную */ -}}
-    {{- $pagesByYear := dict -}}
-    {{- range $uniquePagesList -}}
+    {{- /* Сортируем дедуплицированные страницы по дате */ -}}
+    {{- $sortedPages := sort $uniquePagesList ".Date" "desc" -}}
+    
+    {{- /* Группируем по годам и выводим */ -}}
+    {{- $currentYear := "" -}}
+    {{- range $sortedPages -}}
       {{- $year := .Date.Format "2006" -}}
-      {{- $yearPages := index $pagesByYear $year | default slice -}}
-      {{- $yearPages = $yearPages | append . -}}
-      {{- $pagesByYear = merge $pagesByYear (dict $year $yearPages) -}}
-    {{- end -}}
-    
-    {{- /* Сортируем годы по убыванию */ -}}
-    {{- $sortedYears := $pagesByYear | keys | sort | reverse -}}
-    
-    {{- range $year := $sortedYears -}}
-      {{- $yearPages := index $pagesByYear $year -}}
-      <div class="archive__heading">{{ $year }}</div>
+      {{- if ne $year $currentYear -}}
+        {{- $currentYear = $year -}}
+        <div class="archive__heading">{{ $year }}</div>
+      {{- end -}}
       
-      {{- /* Теперь просто выводим уже дедуплицированные страницы */ -}}
-      {{ range $yearPages }}
-        <ul class="archive__list">
-          <li class="archive__list-item">
-            {{- /* Убираем языковой префикс из URL */ -}}
-            {{- $cleanLink := .RelPermalink | replaceRE "^/[a-z]+/" "/" -}}
-            {{ if (eq .Site.Params.disableArchiveTitleStyling true) }}
-              <a class="archive__list-title" href="{{ $cleanLink }}" title="{{ .Title }}">{{ .Title }}</a>
-            {{ else }}
-              <a class="archive__list-title" href="{{ $cleanLink }}" title="{{ .Title }}">{{ upper .Title }}</a>
-            {{ end }}
-            <div class="archive__list-date">
-              {{ if isset .Site.Params "listdateformat" }}
-                {{ if .Site.Params.localizedDates }}
-                  {{ time.Format .Site.Params.listDateFormat .Date }}
-                {{ else }}
-                  {{ .Date.Format .Site.Params.listDateFormat }}
-                {{ end }}
-
+      <ul class="archive__list">
+        <li class="archive__list-item">
+          {{- /* Убираем языковой префикс из URL */ -}}
+          {{- $cleanLink := .RelPermalink | replaceRE "^/[a-z]+/" "/" -}}
+          {{ if (eq .Site.Params.disableArchiveTitleStyling true) }}
+            <a class="archive__list-title" href="{{ $cleanLink }}" title="{{ .Title }}">{{ .Title }}</a>
+          {{ else }}
+            <a class="archive__list-title" href="{{ $cleanLink }}" title="{{ .Title }}">{{ upper .Title }}</a>
+          {{ end }}
+          <div class="archive__list-date">
+            {{ if isset .Site.Params "listdateformat" }}
+              {{ if .Site.Params.localizedDates }}
+                {{ time.Format .Site.Params.listDateFormat .Date }}
               {{ else }}
-                {{ if .Site.Params.localizedDates }}
-                  {{ time.Format "Jan 2" .Date }}
-                {{ else }}
-                  {{ .Date.Format "Jan 2" }}
-                {{ end }}
-
+                {{ .Date.Format .Site.Params.listDateFormat }}
               {{ end }}
-            </div>
-          </li>
-        </ul>
-      {{ end }}
 
-    {{ end }}
+            {{ else }}
+              {{ if .Site.Params.localizedDates }}
+                {{ time.Format "Jan 2" .Date }}
+              {{ else }}
+                {{ .Date.Format "Jan 2" }}
+              {{ end }}
+
+            {{ end }}
+          </div>
+        </li>
+      </ul>
+    {{- end -}}
   </div>
 {{ end }}
