@@ -37,8 +37,8 @@
       
       <ul class="archive__list">
         <li class="archive__list-item">
-          {{- /* Убираем языковой префикс из URL */ -}}
-          {{- $cleanLink := .RelPermalink | replaceRE "^/[a-z]+/" "/" -}}
+          {{- /* Убираем только языковой префикс из URL */ -}}
+          {{- $cleanLink := .RelPermalink | replaceRE "^/(russian|english|ru|en)/" "/" -}}
           {{ if (eq .Site.Params.disableArchiveTitleStyling true) }}
             <a class="archive__list-title" href="{{ $cleanLink }}" title="{{ .Title }}">{{ .Title }}</a>
           {{ else }}
