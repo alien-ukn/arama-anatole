@@ -100,4 +100,23 @@ Wild Siberia Xtreme Triathlon
 
 *Неделя адаптации к алтайским условиям завершена!*  
 
+
+{{< figure src="01.jpg" alt="Арама Анна" class="medium" >}}
+{{< figure src="02.jpg" alt="Арама Анна" class="medium" >}}
+{{< figure src="03.jpg" alt="Арама Анна" class="medium" >}}
+{{< figure src="04.jpg" alt="Арама Анна" class="medium" >}}
+{{< figure src="05.jpg" alt="Арама Анна" class="medium" >}}
+{{< figure src="06.jpg" alt="Арама Анна" class="medium" >}}
+{{< figure src="07.jpg" alt="Арама Анна" class="medium" >}}
+{{< figure src="08.jpg" alt="Арама Анна" class="medium" >}}
+{{< figure src="09.jpg" alt="Арама Анна" class="medium" >}}
+{{< figure src="10.jpg" alt="Арама Анна" class="medium" >}}
+{{< figure src="11.jpg" alt="Арама Анна" class="medium" >}}
+{{< figure src="12.jpg" alt="Арама Анна" class="medium" >}}
+{{< figure src="13.jpg" alt="Арама Анна" class="medium" >}}
+{{< figure src="14.jpg" alt="Арама Анна" class="medium" >}}
+{{< figure src="15.jpg" alt="Арама Анна" class="medium" >}}
+
+
+
 {{< instagram DMftULSI97r >}}
