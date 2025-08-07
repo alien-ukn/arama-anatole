@@ -23,12 +23,6 @@ enableEmoji = true
 enableRobotsTXT = true
 
 
-[robotsTXT]
-  disable = false  # если true — файл не генерируется
-  sitemap = "https://arama.pro/sitemap.xml"
-  rules = [
-    { UserAgent = "*", Allow = "/" }
-  ]
 
 
 #disableKinds = ["section"]
