@@ -45,7 +45,7 @@ Wild Siberia Xtreme Triathlon
 
 Вечером было награждение, где неожиданно для себя получила приз финишера - деревянный сруб. Чуть позже был салют или благословение шамана на дальнейшие триатлонные подвиги. Вечером приехал Давыдик Роман <a href="https://www.instagram.com/romandavydik" target="_blank" style="text-decoration: none; color: #333; transition: color 0.3s;" >
   <i class="fa-brands fa-instagram" style="font-size: 20px; color: #0088cc; margin-right: 8px"></i>
-  romandavydik</a>— беговой саппорт Андрея.
+  romandavydik</a> — беговой саппорт Андрея.
 
 ## День 10, среда, 30.07.2025
 
