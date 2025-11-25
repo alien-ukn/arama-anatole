@@ -100,4 +100,17 @@ images=["images/250729-ws113.jpg"]
 {{< figure src="09.jpg" alt="Арама Анна" class="medium" >}}
 {{< figure src="10.jpg" alt="Арама Анна" class="medium" >}}
 
+{{< figure src="11.jpg" alt="Арама Анна" class="medium" >}}
+{{< figure src="12.jpg" alt="Арама Анна" class="medium" >}}
+{{< figure src="13.jpg" alt="Арама Анна" class="medium" >}}
+{{< figure src="14.jpg" alt="Арама Анна" class="medium" >}}
+{{< figure src="15.jpg" alt="Арама Анна" class="medium" >}}
+{{< figure src="16.jpg" alt="Арама Анна" class="medium" >}}
+{{< figure src="17.jpg" alt="Арама Анна" class="medium" >}}
+{{< figure src="18.jpg" alt="Арама Анна" class="medium" >}}
+{{< figure src="19.jpg" alt="Арама Анна" class="medium" >}}
+{{< figure src="20.jpg" alt="Арама Анна" class="medium" >}}
 
+
+{{< figure src="21.jpg" alt="Арама Анна" class="medium" >}}
+{{< figure src="22.jpg" alt="Арама Анна" class="medium" >}}
