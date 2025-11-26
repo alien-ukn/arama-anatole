@@ -49,7 +49,7 @@ Long distance (226) national Champion 🥇🥈🥇
 
 ## Ляцкий Андрей
 
-50 x Ironman , triathlon coach, best IM time 8.09.47
+50 x Ironman, triathlon coach, best IM time 8.09.47
 
 <a href="https://tristats.ru/rus/profile/lyatskiy-andrey" target="_blank" style="text-decoration: none; color: #333; display: flex; align-items: center;">
   <span style="display: inline-block; width: 20px; height: 20px; margin-right: 8px;">
