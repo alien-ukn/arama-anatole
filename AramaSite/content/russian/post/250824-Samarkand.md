@@ -68,7 +68,7 @@ categories = [
 {{< figure src="07.jpg" alt="Арама Анна" class="medium" >}}
 {{< figure src="08.jpg" alt="Arama Anna" class="medium" >}}
 {{< figure src="09.jpg" alt="Арама Анна" class="medium" >}}
-{{< figure src="10s.jpg" alt="Arama Anna" class="medium" >}}
+{{< figure src="10.jpg" alt="Arama Anna" class="medium" >}}
 
 
 
