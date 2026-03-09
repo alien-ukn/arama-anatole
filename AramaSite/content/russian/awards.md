@@ -1,7 +1,7 @@
 +++
 title = "Награды"
 description = "Соревнования, гонки, триатлон"
-date = "2025-07-18"
+date = "2026-03-09"
 aliases = ["Награды"]
 author = "Arama Anna"
 +++
