@@ -24,6 +24,7 @@ author = "Arama Anna"
 - 🥈 **Challenge Championship Šamorín 2025** - 2 место (AG)
 - 🥇 **Challenge Samarkand 2024** - 1 место (Overall)
 - 🥉 **Challenge Samarkand 2025** - 3 место (AG)
+- 🥈 **Ironman 70.3 Muscat** - 2 место (AG)
 
 ## 🇷🇺 Российские соревнования
 ### 🏔 Медный всадник 113
