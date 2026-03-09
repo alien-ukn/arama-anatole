@@ -68,7 +68,9 @@ localizedDates = true
 [params]
     yandexMetrika = true
 
-
+[author]
+  name = "Anna Arama"
+  email = "anna@arama.pro"
 #[permalinks]
 #  tags = "/tags/:slug/"
 #  categories = "/categories/:slug/"
