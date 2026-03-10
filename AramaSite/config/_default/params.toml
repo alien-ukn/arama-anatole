@@ -1,7 +1,6 @@
 
 title = "Арама Анна"
-author = "Arama Anna"
-email = "anna@arama.pro"
+
 #copyright = "2020-2021"
 description = "Arama Anna 🏊‍♀️🚴‍♀️🏃🏽"
 profilePicture = "images/profile.jpg"
@@ -87,3 +86,6 @@ url = "https://www.strava.com/athletes/99577195"
 [mermaid]
 enable = false
 
+[params.author]
+  author = "Arama Anna"
+  email = "anna@arama.pro"
