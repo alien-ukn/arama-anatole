@@ -2,7 +2,7 @@
 {{- $text := .Get 1 -}}
 {{- $iconSize := .Get 2 | default "20px" -}}
 
-{{- $svg := readFile "assets/icons/garmin.svg" -}}
+{{- $svg := readFile "static/images/garmin.svg" -}}
 {{- $svg = replace $svg "<svg" (printf `<svg style="width:%s;height:%s;vertical-align:middle;margin-right:8px;"` $iconSize $iconSize) -}}
 
 <a href="https://connect.garmin.com/modern/activity/{{ $activityID }}" 
