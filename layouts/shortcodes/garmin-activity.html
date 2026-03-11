@@ -3,10 +3,11 @@
 {{- $iconSize := .Get 2 | default "20px" -}}
 
 {{- $svg := readFile "static/images/garmin.svg" -}}
-{{- $svg = replace $svg "<svg" (printf `<svg style="width:%s;height:%s;vertical-align:middle;margin-right:8px;"` $iconSize $iconSize) -}}
+{{/* Убираем vertical-align из SVG — flexbox сам выровняет */}}
+{{- $svg = replace $svg "<svg" (printf `<svg style="width:%s;height:%s;display:block;flex-shrink:0;margin-right:8px;"` $iconSize $iconSize) -}}
 
 <a href="https://connect.garmin.com/modern/activity/{{ $activityID }}" 
    target="_blank" 
-   style="text-decoration: underline; text-decoration-style: dotted; color: #0066ff; transition: color 0.3s; display: inline-flex; align-items: center;">
-  {{ $svg | safeHTML }}<span>{{ $text }}</span>
+   style="text-decoration: underline; text-decoration-style: dotted; color: #0066ff; transition: color 0.3s; display: inline-flex; align-items: center; line-height: 1;">
+  {{ $svg | safeHTML }}<span style="display: inline-block; line-height: normal;">{{ $text }}</span>
 </a>
